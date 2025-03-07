@@ -1,24 +1,44 @@
-# Overview
-The unitree_guide is an open source project for controlling the quadruped robot of Unitree Robotics, and it is also the software project accompanying [《四足机器人控制算法--建模、控制与实践》](https://detail.tmall.com/item.htm?spm=a212k0.12153887.0.0.5487687dBgiovR&id=704510718152) published by Unitree Robotics.
+# 16_Ways_to_Gallop
+## Video
 
-# Quick Start
-The following will quickly introduce the use of unitree_guide in the gazebo simulator. For more usage, please refer to 《四足机器人控制算法--建模、控制与实践》.
-## Environment
-We recommand users to run this project in Ubuntu 18.04 and ROS melodic environment.
-## Dependencies
-1. [unitree_guide](https://github.com/unitreerobotics/unitree_guide)<br>
-2. [unitree_ros](https://github.com/unitreerobotics/unitree_ros)<br>
-3. [unitree_legged_msgs](https://github.com/unitreerobotics/unitree_ros_to_real)(Note that: unitree_legged_real package should not be a part of dependencies)<br>
 
-Put these three packages in the src folder of a ROS workspace.
+https://github.com/user-attachments/assets/f61d39dd-1e16-44e3-9111-f9862808ee01
+
+
+## Overview
+
+This file documents 
+
+Introduction:
+
+
+
+
+
+## Publications
+
+This work has been submitted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).
+
+If you use this work in an academic context, please cite the following publication:
+
+## Requirements
+### Environment
+
+We recommend that users run this project in Ubuntu 18.04 with ROS melodic or 20.04 with ROS noetic.
+
+### Dependencies
+
+Please place the three packages, unitree_guide, unitree_ros, and unitree_ros_to_real in our repository in a ROS workspace’s source directory.
 
 ## build
-Open a terminal and switch the directory to the ros workspace containing unitree_guide,  then run the following command to build the project:
+
+Open a terminal and switch the directory to the ros workspace containing unitree_guide, then run the following command to build the project:
 ```
 catkin_make
 ```
-If you have any error in this step, you can raise an issue to us.
+
 ## run
+
 In the same terminal, run the following command step by step:
 ```
 source ./devel/setup.bash
@@ -33,9 +53,17 @@ For starting the controller, open an another terminal and switch to the same dir
 ./devel/lib/unitree_guide/junior_ctrl
 ```
 
-## usage
-After starting the controller,  the robot will lie on the ground of the simulator, then press the '2' key on the keyboard to switch the robot's finite state machine (FSM) from **Passive**(initial state) to **FixedStand**,  then press the '4' key to switch the FSM from **FixedStand** to **Trotting**, now you can press the 'w' 'a' 's' 'd' key to control the translation of the robot, and press the 'j' 'l' key to control the rotation of the robot. Press the Spacebar, the robot will stop and stand on the ground
-. (If there is no response, you need to click on the terminal opened for starting the controller and then repeat the previous operation)
+## Usage
 
-# Note
-Unitree_guide provides a basic quadruped robot controller for beginners. To achive better performance, additional fine tuning of parameters or more advanced methods (such as MPC etc.) might be required. Any contribution and good idea from the robotics community are all welcome. Feel free to raise an issue ~ <br>
+### Simulation
+
+After starting the controller,  the robot will lie on the ground of the simulator, then press the '2' key on the keyboard to switch the robot's finite state machine (FSM) from **Passive**(initial state) to **FixedStand**.  
+
+Then press the ‘7’ key to switch the FSM from **FixedStand** to **Galloping_G0**, which corresponds to the ground Transverse Galloping Gait. The robot will accelerate itself.
+
+Press the '2' to return to the **FixedStand**. The program automatically creates a plot including front/hip position, joint angle, foot position, ground reaction force, motor torque, etc. After you close all the figures, you will return to the **FixedStand**.
+
+Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Galloping_G2**,  which corresponds to the Transverse Galloping Gait with two fly phase. The robot will accelerate itself.(If there is no response, you need to click on the terminal opened to start the controller and then repeat the previous operation)
+
+If you want to change the Transverse Galloping Gait to Rotory Galloping Gait, plase modify the vector _bias by switching the last two elemets in the State_Galloping_G0.cpp and State_Galloping_G2.cpp; 
+
