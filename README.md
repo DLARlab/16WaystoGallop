@@ -23,7 +23,20 @@ This projected was initially developed at Syracuse University (Dynamic Locomotio
 
 This work has been submitted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).
 
-## Requirements
+## Optimization Requirements
+### Environment
+
+To use this code, you need MATLAB R2019b and Wolfram Mathematica 12.1.
+
+## Usage
+
+1- Download FROST framework from (https://github.com/ayonga/frost-dev) and follow the steps on the installation page.
+
+2- Add the "Optimization" folder to the main folder of FROST.
+
+3- For each gait, run the main file section by section. For example, RG0 main file name is "A1_RG0."
+
+## Simulation Requirements
 ### Environment
 
 We recommend that users run this project in Ubuntu 18.04 with ROS melodic or 20.04 with ROS noetic.
