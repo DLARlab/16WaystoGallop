@@ -19,8 +19,6 @@ Introduction:
 
 This work has been submitted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).
 
-If you use this work in an academic context, please cite the following publication:
-
 ## Requirements
 ### Environment
 
