@@ -1,4 +1,4 @@
-# 16_Ways_to_Gallop
+# 16 Ways to Gallop
 ## Video
 
 
