@@ -27,7 +27,7 @@ This work has been submitted to the IEEE/RSJ International Conference on Intelli
 
 To use this code, you need MATLAB R2019b and Wolfram Mathematica 12.1.
 
-## Usage
+### Usage
 
 1- Download FROST framework from (https://github.com/ayonga/frost-dev) and follow the steps on the installation page.
 
