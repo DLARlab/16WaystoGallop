@@ -27,7 +27,7 @@ This work has been submitted to the IEEE/RSJ International Conference on Intelli
 
 To use this code, you need MATLAB R2019b and Wolfram Mathematica 12.1.
 
-### Usage
+## Usage
 
 1- Download FROST framework from (https://github.com/ayonga/frost-dev) and follow the steps on the installation page.
 
@@ -68,8 +68,6 @@ For starting the controller, open an another terminal and switch to the same dir
 ```
 
 ## Usage
-
-### Simulation
 
 After starting the controller,  the robot will lie on the ground of the simulator, then press the '2' key on the keyboard to switch the robot's finite state machine (FSM) from **Passive**(initial state) to **FixedStand**.  
 
