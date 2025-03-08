@@ -7,13 +7,26 @@ https://github.com/user-attachments/assets/f61d39dd-1e16-44e3-9111-f9862808ee01
 
 ## Overview
 
-This file documents 
+This repository contains the code used to formulate a nonlinear programming (NLP) problem designed to identify eight optimal asymmetrical gaits for the A1 quadrupedal robot. The targeted gaits are: Transverse and Rotary Galloping without Flight Phases (TG0 and RG0); Transverse and Rotary Galloping with Gathered Suspension (TGG and RGG); Transverse and Rotary Galloping with Extended Suspension (TGE and RGE); and Transverse and Rotary Galloping with Dual Flight Phases (TG2 and RG2). The code leverages the Fast Robot Optimization and Simulation (FROST) toolkit (https://github.com/ayonga/frost-dev). Additionally, the repository includes the code used to conduct simulation tests for the A1 robot in the Gazebo environment, which employs a Quadratic Programming (QP)-based locomotion controller.
 
-Introduction:
+Contents:
 
+Optimization: Code for generating the solutions of the galloping gaits, including creating the hybrid system and the NLP problem cost functions and constraints.
 
+Features:
 
+Hybrid Dynamics: Creating realistic models for any robot and formulating them as hybrid dynamics with impact models.
+Animations: Generate the animations and the trajectories of any solution.
+NLP: Constructing and solving NLP problems.
+This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
+The source code is released under a BSD 3-Clause license.
+
+Author: Yasser G. Alqaham, Jing Cheng, Zhenyu Gan
+Affiliation: DLAR Lab
+Maintainer: Yasser G. Alqaham, ygalqaha@syr.edu, and Jing Cheng jcheng13@syr.edu.
+
+This projected was initially developed at Syracuse University (Dynamic Locomotion and Robotics Lab).
 
 ## Publications
 
