@@ -75,7 +75,7 @@ Then press the ‘7’ key to switch the FSM from **FixedStand** to **Galloping_
 
 Press the '2' to return to the **FixedStand**. The program automatically creates a plot including front/hip position, joint angle, foot position, ground reaction force, motor torque, etc. After you close all the figures, you will return to the **FixedStand**.
 
-Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Galloping_G2**,  which corresponds to the Transverse Galloping Gait with two fly phase. The robot will accelerate itself.(If there is no response, you need to click on the terminal opened to start the controller and then repeat the previous operation)
+Go back to **FixedStand**, then press the ‘6’ key to switch the FSM from **FixedStand** to **Galloping_G2**,  which corresponds to the Transverse Galloping Gait with two fly phase. The robot will accelerate itself.(If there is no response, you need to click on the terminal opened to start the controller and then repeat the previous operation)
 
 If you want to change the Transverse Galloping Gait to Rotory Galloping Gait, plase modify the vector **_bias** by switching the last two elemets in the State_Galloping_G0.cpp and State_Galloping_G2.cpp; 
 
