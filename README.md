@@ -1,9 +1,7 @@
 # 16 Ways to Gallop
 ## Video
 
-
-https://github.com/user-attachments/assets/f61d39dd-1e16-44e3-9111-f9862808ee01
-
+https://github.com/user-attachments/assets/c7cc91f6-f462-435f-8883-56c00a1592f9
 
 ## Overview
 
