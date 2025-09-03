@@ -18,7 +18,7 @@ This projected was initially developed at Syracuse University (Dynamic Locomotio
 
 ## Publications
 
-This work has been submitted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).
+This work has been accepted in the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).
 
 ## Optimization Requirements
 ### Environment
