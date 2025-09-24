@@ -221,7 +221,7 @@ parser_results = p.Results;
              guards = [    FL_td,       FR_lo,     FL_lo,   RL_td,     RR_td,       RL_lo,     RR_lo,   FR_td];
             
             % --Define hybrid system-- %
-            srcs = {'stance_FR', 'stance_FRFL', 'stance_FL', 'flight1', 'stance_RR', 'stance_RRRL', 'stance_RL', 'flight2'};      
+            srcs = {'stance_FR', 'stance_FRFL', 'stance_FL', 'flight1', 'stance_RL', 'stance_RRRL', 'stance_RR', 'flight2'};      
             tars = circshift(srcs,-1);                 
              sys = HybridSystem('A1');
              sys = addVertex(sys, srcs, 'Domain', {stance_FR, stance_FRFL, stance_FL, flight1, stance_RL, stance_RRRL, stance_RR, flight2});
@@ -439,3 +439,4 @@ parser_results = p.Results;
     
     
 end
+
