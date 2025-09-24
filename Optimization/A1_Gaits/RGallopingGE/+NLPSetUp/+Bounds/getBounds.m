@@ -269,8 +269,8 @@ bounds.stance_RL.inputs.ConstraintWrench.fRLfoot.ub = 10000;
 bounds.stance_RL.inputs.ConstraintWrench.fRLfoot.x0 = 100;
 
 % contacts
-bounds.stance_RL.params.pRRfoot.lb = [-10;-10;0];
-bounds.stance_RL.params.pRRfoot.ub = [+10;+10;0]; 
+bounds.stance_RL.params.pRLfoot.lb = [-10;-10;0];
+bounds.stance_RL.params.pRLfoot.ub = [+10;+10;0]; 
 
 bounds.stance_RL.params.atime.lb = -100*ones(6*12,1); % 5th order polynomial * 12 joints
 bounds.stance_RL.params.atime.ub =  100*ones(6*12,1);
@@ -363,3 +363,4 @@ bounds.RL_td = model_bounds;
 bounds.RL_lo = model_bounds;
 
 end
+
